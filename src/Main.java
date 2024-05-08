@@ -10,23 +10,24 @@ public class Main {
     }
 
     //Задача №2
-    private static void getYearAndOCAndPrint(int OC, int year,int currentYear) {
-        if (OC==0 && year < currentYear) {
+    private static void getYearAndOCAndPrint(int OC, int year, int currentYear) {
+        if (OC == 0 && year < currentYear) {
             System.out.println("Установите облегченную версию приложения для IOS по ссылке");
-        } else if (OC==0 && year >= currentYear) {
+        } else if (OC == 0 && year >= currentYear) {
             System.out.println("Установите версию приложения для IOS по ссылке");
-        } else if (OC==1 && year < currentYear) {
+        } else if (OC == 1 && year < currentYear) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (OC==1 && year >= currentYear) {
+        } else if (OC == 1 && year >= currentYear) {
             System.out.println("Установите версию приложения для Android по ссылке");
         } else {
             System.out.println("Приложение не установится");
         }
 
     }
+
     //Задача №3
-    private static String getDistanceDaysAndPrint(int distance ){
-        int days=1;
+    private static String getDistanceDaysAndPrint(int distance) {
+        int days = 1;
         if (distance <= 20) {
             return "Потребуется дней: " + days;
         } else if (distance > 20 && days <= 60) {
@@ -48,13 +49,12 @@ public class Main {
         System.out.println();
         //Задача №2
         int clientDeviceYear = 2021;
-        int clientDeviceOC=1;
-        int borderYear=2015;
-        getYearAndOCAndPrint(clientDeviceOC,clientDeviceYear,borderYear);
+        int clientDeviceOC = 1;
+        int borderYear = 2015;
+        getYearAndOCAndPrint(clientDeviceOC, clientDeviceYear, borderYear);
         //Задача №3
-        int deliveryDistance =95;
+        int deliveryDistance = 95;
         System.out.println(getDistanceDaysAndPrint(deliveryDistance));
-
 
 
     }
